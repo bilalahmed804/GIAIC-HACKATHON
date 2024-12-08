@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { useState } from "react";
 import Statistic from "./Statistic";
+import Link from "next/link";
 
 export default function ShopPage() {
   const [itemsPerPage, setItemsPerPage] = useState(16);
@@ -83,9 +84,9 @@ export default function ShopPage() {
         </div>
         <div className="p-4">
           <nav className="text-gray-500">
-            <a href="/" className="hover:text-gray-800">
+            <Link href="/" className="hover:text-gray-800">
               Home
-            </a>{" "}
+            </Link>{" "}
             / <span>Shop</span>
           </nav>
         </div>

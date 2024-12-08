@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 import {
   AiOutlineHeart,
@@ -23,7 +24,7 @@ export default function Navbar() {
           <div className="flex items-center justify-between h-16">
             {/* Logo Section */}
             <div className="flex items-center">
-              <a href="/" className="text-black flex items-center">
+              <Link href="/" className="text-black flex items-center">
                 <Image
                   width={50}
                   height={50}
@@ -33,28 +34,26 @@ export default function Navbar() {
                 <span className="ml-3 font-bold text-2xl lg:text-3xl">
                   Furniro
                 </span>
-              </a>
+              </Link>
             </div>
 
             {/* Desktop Links */}
             <div className="hidden md:flex space-x-6">
               {["Home", "Shop", "Blog", "Contact"].map((item, idx) => (
-                <a
+                <Link
                   key={idx}
                   href={`/${item.toLowerCase()}`}
                   className="text-black hover:bg-[#e9c87c] hover:text-white px-4 py-2 rounded-md text-sm font-semibold"
                 >
                   {item}
-                </a>
+                </Link>
               ))}
             </div>
 
-            {/* Action Icons */}
             <div className="flex items-center space-x-4">
               <AiOutlineSearch className="icon" />
               <AiOutlineHeart className="icon" />
               <AiOutlineShoppingCart className="icon" />
-              {/* Mobile Menu Toggle */}
               <button
                 className="md:hidden text-2xl"
                 onClick={toggleNavbar}
@@ -70,20 +69,20 @@ export default function Navbar() {
           <div className="md:hidden bg-[#FFF3E3] border-t border-gray-300">
             <div className="flex flex-col px-4 py-3 space-y-3">
               {["Home", "Shop", "Blog", "Contact"].map((item, idx) => (
-                <a
+                <Link
                   key={idx}
                   href={`/${item.toLowerCase()}`}
                   className="text-black hover:bg-[#e9c87c] hover:text-white px-3 py-2 rounded-md text-sm font-semibold"
                 >
                   {item}
-                </a>
+                </Link>
               ))}
             </div>
           </div>
         )}
       </nav>
 
-      {/* Styling */}
+    
       <style jsx>{`
         .icon {
           font-size: 1.5rem;
