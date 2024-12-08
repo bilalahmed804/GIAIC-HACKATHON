@@ -6,7 +6,7 @@ export default function Card (){
         <div className="text-gray-600 body-font">
   <div className="container px-5 pt-24 mx-auto">
         <h1 className="text-[#333333] text-center text-3xl font-bold">Browse The Range </h1>
-        <p className="text-[#666666] text-center mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p className="text-[#666666] text-center mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
     <div className="flex flex-wrap -m-4 justify-center">
       <div className="p-4">
         <div className="border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">

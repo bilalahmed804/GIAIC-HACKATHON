@@ -22,7 +22,6 @@ export default function Navbar() {
       <nav className="bg-[#FFF3E3] shadow-md sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
-            {/* Logo Section */}
             <div className="flex items-center">
               <Link href="/" className="text-black flex items-center">
                 <Image
@@ -37,7 +36,7 @@ export default function Navbar() {
               </Link>
             </div>
 
-            {/* Desktop Links */}
+
             <div className="hidden md:flex space-x-6">
               {["Home", "Shop", "Blog", "Contact"].map((item, idx) => (
                 <Link
@@ -64,7 +63,7 @@ export default function Navbar() {
           </div>
         </div>
 
-        {/* Mobile Menu */}
+
         {isClick && (
           <div className="md:hidden bg-[#FFF3E3] border-t border-gray-300">
             <div className="flex flex-col px-4 py-3 space-y-3">

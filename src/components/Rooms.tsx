@@ -19,15 +19,15 @@ export default function Rooms() {
       </div>
 
     
-      <div className="relative w-full max-w-md lg:max-w-lg">
+      <div className="relative max-w-md lg:max-w-lg">
        
-        <Card className="w-full h-[250px] lg:h-[300px] overflow-hidden rounded-lg">
+        <Card className=" lg:h-[300px] overflow-hidden rounded-lg">
           <Image
             src={"/Rectangle 24.png"}
             alt="Room Inspiration"
             width={400}
             height={300}
-            className="w-full h-full object-cover"
+            className="w-[400] h-full object-cover"
           />
         </Card>
 
@@ -50,13 +50,6 @@ export default function Rooms() {
           width={200}
           height={150}
           className="w-[200px] h-[150px] object-cover rounded-lg"
-        />
-        <Image
-          src={"/Rectangle 26.png"}
-          alt="Room Inspiration"
-          width={100}
-          height={150}
-          className="w-[100px] h-[150px] object-center rounded-lg"
         />
       </div>
     </section>
