@@ -72,15 +72,23 @@ export default function ShopPage() {
 
   return (
     <div className="min-h-screen bg-gray-100 p-6">
-      {/* Header Section */}
       <div className="bg-white shadow-md rounded-lg mb-6">
         <div
           className="h-40 bg-cover bg-center rounded-t-lg"
           style={{ backgroundImage: "url('/Rectangle 1.png')" }}
         >
-          <div className="flex items-center justify-center h-full bg-black bg-opacity-20">
-            <h1 className="text-4xl text-white font-bold">Shop</h1>
-          </div>
+           <div className="flex items-center justify-center h-full bg-black bg-opacity-20 rounded-t-lg">
+            <div>
+        <Image
+        className="ml-5"
+        width={50}
+        height={50}
+        src={"/Meubel House_Logos-05.jpg"}
+        alt="Logo"
+        />
+          <h1 className="text-4xl text-white font-bold">Shop</h1>
+        </div>
+        </div>
         </div>
         <div className="p-4">
           <nav className="text-gray-500">
@@ -92,7 +100,6 @@ export default function ShopPage() {
         </div>
       </div>
 
-      {/* Filter and Controls */}
       <div className="bg-white p-4 shadow-md rounded-lg mb-6 flex flex-col md:flex-row justify-between items-center gap-4">
         <div className="flex items-center gap-4">
           <button

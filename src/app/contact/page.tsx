@@ -11,7 +11,7 @@ export default function Contact(){
         className="h-40 bg-cover bg-center rounded-t-lg"
         style={{ backgroundImage: "url('/Rectangle 1.png')" }}
         >
-        <div className="flex items-center justify-center h-full bg-black bg-opacity-20">
+        <div className="flex items-center justify-center h-full bg-black bg-opacity-20 rounded-t-lg">
             <div>
         <Image
         className="ml-5"

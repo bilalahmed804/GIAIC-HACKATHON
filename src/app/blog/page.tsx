@@ -23,10 +23,30 @@ export default function Blog() {
   ];
 
   return (
-    <div className="container mx-auto p-4">
-      <header className="mb-6">
+    <div className="min-h-screen bg-gray-100 p-6">
+         <div className="bg-white shadow-md rounded-lg mb-6">
+        <div
+          className="h-40 bg-cover bg-center rounded-t-lg"
+          style={{ backgroundImage: "url('/Rectangle 1.png')" }}
+        >
+           <div className="flex items-center justify-center h-full bg-black bg-opacity-20 rounded-t-lg">
+            <div>
+        <Image
+        className="ml-5"
+        width={50}
+        height={50}
+        src={"/Meubel House_Logos-05.jpg"}
+        alt="Logo"
+        />
+          <h1 className="text-4xl text-white font-bold">Blogs</h1>
+        </div>
+        </div>
+        </div>
+        <div className="p-4">
         <h1 className="text-2xl font-bold">My Blog</h1>
-      </header>
+         
+        </div>
+      </div>
 
       <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
         <div className="md:col-span-3 space-y-6">
